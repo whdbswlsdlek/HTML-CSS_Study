@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--의미있는 태그들-->
+    <p style="font-weight: bold">볼드체</p>
+    <!--p태그는 무조건 다음 줄로 넘어가서 출력됨-->
+    <p><b>볼드체</b>입니다.</p>
+    <p><strong>강조하는 볼드체</strong>입니다.</p>
+    <!--강조하고 싶으면 strong태그를 사용해야함-->
+    <p style="font-style: italic">이탤릭체입니다.</p>
+    <i>이탤릭체입니다.</i>
+    <p><em>강조하는 이탤릭체입니다.</em></p>
+    <!--강조하고 싶으면 em 태그를 사용해야함-->
+    <p>텍스트가 <small>작게</small>보이게 됩니다.</p>
+    <p>집에 오는 길에 <mark>우유</mark>를 사는 걸 잊지 마라.</p>
+    <!--스타일로 지정된것은 절대로 중요하다고 인식하지 않음 그에 맞는 태그를 사용하는게 좋음
+    스타일로 지정된것은 디자인적인 요소일뿐임-->
+    <p>제품 할인 중 <del> 3만원</del> 2만8천원</p>
+    <p style="text-decoration: line-through">3만원</p>
+    <p>내가 제일 좋아하는 색상은 <ins>노란색</ins>입니다.</p>
+    <p style="text-decoration: underline">노란색</p>
+    <p>X<sub>2</sub></p>
+    <p>X<sup>2</sup></p>
+    <blockquote cite="https://www.naver.com">
+      안녕하세요 저는 뭐시기 입니다다
+    </blockquote>
+    <!--긴문장을 인용할때 사용하는 태그 / cite 속성에는 인용한 사이트 주소 입력-->
+    <q>짧은 인용</q>
+    <abbr title="World Health Organization">WHO</abbr
+    ><!--약자로 사용되는 문자의 풀네임을 알려주는 태그-->
+    <address>대한민국 제주특별자치도 제주시 무슨동 몇번지</address>
+    <!--예: 회사 사이트 들어가면 맨 하단에 있는 회사주소 및 이메일주소 등이 적혀있는 것은 이것을 사용-->
+    <p><cite>절규</cite>는 뭉크가 1893년에 그린 그림입니다.</p>
+    <p><cite>개발자의품격</cite>은 유튜브 채널 입니다.</p>
+    <!--cite태그는 상품, 제품명등을 적을때 사용하는 태그-->
+
+    <!--의미 없는 태그 div, span-->
+    <!--HTML 태그들을 담기위한 컨테이너(공간) 역할을 할뿐 이 자체 태그가 하는 일은 없음-->
+    <!--화면에 콘텐츠(태그)를 배치하기 위한 레이아웃 용도-->
+    <!--block 요소: 콘텐츠의 크기와 상관없이 한줄 전체를 차지함: div, h1~h6, p -->
+    <!--inline 요소: 콘텐츠 크기만큼 공간을 차지함: span-->
+
+    <div style="background-color: blue">div 태그입니다.</div>
+    <!--한줄 전체를 차지함, 길이와 상관없이-->
+    <span style="background-color: green">span 태그입니다.</span>
+    <!--그 글자 길이만큼만 차지함-->
+  </body>
+</html>
