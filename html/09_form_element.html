@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form 요소 -->
+    <!-- 사용자로 부터 데이터(정보)를 입력 받기 위한 HTML 요소들-->
+    <form action="/server/login">
+      <!-- ""안에는 위 정보를 받을 서버 주소(한번에 전송)-->
+      <div>
+        <label for="">이메일</label>
+        <input type="email" id="email" />
+        <!-- 태그명으로만 구분할수 없고 type값으로 UI혹은 입력받기 위한 정보들이 달라짐-->
+      </div>
+      <div>
+        <label for="">비밀번호</label>
+        <input type="password" id="pw" />
+      </div>
+      <div>
+        <button>로그인</button>
+      </div>
+    </form>
+    <h4>당신이 배우고 싶은 언어는?(다중 선택 가능)</h4>
+    <div>
+      <!-- input type="checkbox": 다중선택요소-->
+      <input type="checkbox" name="chk_lang" id="chk_html" />
+      <label for="chk_html">HTML</label>
+      <input type="checkbox" name="chk_lang" id="chk_css" />
+      <label for="chk_css">CSS</label>
+      <input type="checkbox" name="chk_lang" id="chk_js" />
+      <!--name은 같이 묶여있는 선택지라는걸 알려주기때문에 무조건 작성해야함-->
+      <label for="chk_js">Javascript</label>
+    </div>
+    <h4>당신이 배우고 싶은 언어는?(하나만 선택 가능)</h4>
+    <div>
+      <!--input type="radio": 한개만 선택하게 하는 요소-->
+      <input type="radio" name="rdo_lang" id="rdo_html" />
+      <label for="rdo_html">HTML</label>
+      <input type="radio" name="rdo_lang" id="rdo_css" />
+      <label for="rdo_css">CSS</label>
+      <input type="radio" name="rdo_lang" id="rdo_js" />
+      <label for="rdo_js">Javascript</label>
+    </div>
+    <div>
+      <label for="favoriteColor">가장 좋아하는 색상은?</label>
+      <input type="color" name="" id="favoriteColor" value="" />
+    </div>
+    <div>
+      <label for="bornDate">태어난 날짜는?</label>
+      <input type="date" name="" id="bornDate" />
+    </div>
+    <div>
+      <label for="arrivalDateTime">입국한 날짜/시간은?</label>
+      <input type="datetime-local" name="" id="arrivalDateTime" />
+    </div>
+    <div>
+      <form action="">
+        <label for="userEmail">이메일 주소는?</label>
+        <input type="email" name="" id="userEmail" />
+        <button type="submit">저장</button>
+        <!--submit: form에 지정된 서버쪽 주소로 모든 데이터를 전송-->
+      </form>
+    </div>
+    <div>
+      <label for="attachment">파일 첨부</label>
+      <input type="file" name="" id="attachment" />
+    </div>
+    <div>
+      <!-- 사용자의 입려을 받기 위한 용도가 아님-->
+      <!-- 대부분 개발자가 사용하기 위해서 쓰는 태그임-->
+      <input type="hidden" name="email" value="ty@naver.com" />
+    </div>
+    <div>
+      <!--실무에선 99%가 이 태그만을 사용함-->
+      <img src="./img/dvlog.jpeg" alt="" style="width: 100px; height: auto" />
+      <!--이미지가 링크, 버튼의 기능을 가지고 있을때 사용 / 실무에서 잘 안씀(거의 안씀)-->
+      <input
+        type="image"
+        src="./img/dvlog.jpeg"
+        alt=""
+        style="width: 100px; height: auto"
+      />
+    </div>
+    <div>
+      <label for="yearmonth">생년/년월</label>
+      <input type="month" name="" id="yearmonth" />
+    </div>
+    <div>
+      <label for="">당신의 나이는?</label>
+      <input type="number" name="" id="" min="0" max="100" />
+    </div>
+    <div>
+      <label for="userPass">비밀번호</label>
+      <input type="password" name="" id="userPass" />
+    </div>
+    <div>
+      <form action="">
+        <label for="phone">전화번호</label>
+        <input
+          type="tel"
+          name=""
+          id="phone"
+          value=""
+          pattern="^010-\d{4}-\d{4}$"
+        />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="general">일반문자</label>
+      <input type="text" name="" id="general" />
+      <!--아무거나 다 받을수 있음-->
+    </div>
+    <div>
+      <label for="visitTime">예약시간</label>
+      <input type="time" name="" id="visitTime" />
+    </div>
+    <div>
+      <form action="">
+        <label for="">블로그 주소는?</label>
+        <input type="url" name="" id="" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="weekPlan">주간 계획(몇주차)</label>
+      <input type="week" name="" id="weekPlan" />
+    </div>
+    <div>
+      <label for="searchKeyword">검색조건</label>
+      <input type="search" name="" id="searchKeyword" />
+    </div>
+  </body>
+</html>
