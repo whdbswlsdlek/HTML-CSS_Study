@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--action: 데이터를 전송할 주소-->
+    <!--method: 데이터를 전송할 방법, 2가지 방식으로 나뉨(get, post)-->
+    <!--get: 전송하는 데이터가 url에 붙어서 감, 
+    전송하는 데이터가 url에 노출이 됨(사용자가 볼수 있음-> 보안에 취약)-->
+    <!--get방식을 사용할때는 언제인가-->
+    <!--페이지 주소를 공유해야할때-->
+    <!--예: https://www.coupang.com/vp/products/8443803255? (물음표 뒤에가 전부 get방식)
+    itemId=24425625995&vendorItemId=91439956050&src=1042501&spec=10304968&addtag=400&ctag=8443803255&lptag=I24425625995&itime=20250111153124
+    &pageType=PRODUCT&pageValue=8443803255&wPcid=17026142863834148026985&wRef=search.naver.com&wTime=20250111153124&redirect=landing&
+    mcid=92c71a8c0c324d8185545e70e3d5b87a&n_ad_group=grp-a001-02-000000035884020&n_ad=nad-a001-02-000000340569907&n_rank=1&n_media=27758&
+    n_query=%EB%A7%A5%EB%B6%81-->
+    <!--url에 데이터를 붙여서 보내니까 전송할 수 있는 데이터이 크기의 제약-->
+
+    <!--post: 전송하는 데이터가 url에 붙지 않음, 사용자 분에 안보임-->
+    <!--사용자 눈에 보이지 않기 때문에 보안적으로 조금 더 안정-->
+    <!--결국은 전송하는 데이터를 확인 가능 , 개발자 도구 같은 소프트웨어를 통해서. -->
+    <!--전송하는 데이터를 암호화하는것이 좋음-->
+    <!--https: 암호화 추가가 된거임 http에-->
+    <!--예: https 프로토콜을 사용하면 암호화 가능-->
+    <!--전송할 수 있는 데이터의 크기에 제약 없음-->
+
+    <!--target: 데이터를 전송 할 창을 어디로 할것이냐-->
+    <!-- _self: 자기 자신 창-->
+    <!-- _blank: 새창(새탭)-->
+    <!-- _parent, _top-->
+
+    <!--novalidate: form 태그 안의 ipnut 요소의 정합성을 체크하지 않음-->
+    <form action="전송할 주소(서버주소)" method="get" target="_self" novalidate>
+      <!--novalidate: 아래의 formnovalidate와 같은 기능-->
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" autocomplete="on" />
+      </div>
+      <div>
+        <label for="tel">연락처</label>
+        <input type="tel" name="tel" id="tel" />
+      </div>
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <!--formnovalidate: 체크 안함-->
+      <button type="submit">저장</button>
+      <!--<button type="submit" formnovalidate="formnovalidate">저장</button>-->
+    </form>
+  </body>
+</html>
