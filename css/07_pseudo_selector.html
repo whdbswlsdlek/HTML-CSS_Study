@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 가상 클래스 선택자 */
+      a {
+        text-decoration: none;
+      }
+
+      /* 마우스가  a 태그 위에 올라올때*/
+      a:hover {
+        color: white;
+        background-color: blue;
+      }
+
+      button:hover {
+        color: white;
+        background-color: red;
+      }
+
+      /* 방문한 적이 없는 링크 */
+      a:link {
+        color: blue;
+      }
+
+      /* 방문한 적이 있는 링크 */
+      a:visited {
+        color: green;
+      }
+
+      /* 마우스가 포커스 됐을 때 */
+      input:focus {
+        border: 5px solid red;
+      }
+
+      table,
+      tr,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      /* 2n || even : 짝수행 */
+      /* 2n+1 || odd : 홀수행 */
+      tbody > tr:nth-child(2n + 1) {
+        background-color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com">네이버</a>
+    <a href="https://google.com">구글</a>
+    <a href="https://adadadasd.com">가짜 사이트</a>
+    <br />
+    <button>조회</button>
+    <br />
+    <input type="text" name="" id="" />
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>김도현</th>
+          <th>010-0000-0000</th>
+          <th>사랑해@naver.com</th>
+        </tr>
+        <tr>
+          <th>조유준</th>
+          <th>010-0100-0101</th>
+          <th>귀여워@naver.com</th>
+        </tr>
+        <tr>
+          <th>유혜주</th>
+          <th>010-3242-4334</th>
+          <th>이뻐요@naver.com</th>
+        </tr>
+        <tr>
+          <th>조땡님</th>
+          <th>010-3294-2393</th>
+          <th>건강해@naver.com</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
